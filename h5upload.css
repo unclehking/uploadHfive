@@ -1,0 +1,63 @@
+.uploadWrap {
+  float: left;
+  position: relative;
+  padding-right: 100px;
+  min-height: 116px;
+}
+.uploadWrap .selectBtn {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: solid #ccc 1px;
+  color: #ccc;
+  line-height: 100px;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+.uploadWrap .selectBtn:before {
+  content: " ";
+  display: block;
+  width: 40px;
+  height: 7px;
+  background: #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -3px 0 0 -20px;
+}
+.uploadWrap .selectBtn:after {
+  content: " ";
+  display: block;
+  width: 7px;
+  height: 40px;
+  background: #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -20px 0 0 -3px;
+}
+.uploadWrap .selectBtn:hover {
+  border-color: red;
+}
+.uploadWrap .selectBtn:hover:before,
+.uploadWrap .selectBtn:hover:after {
+  background: red;
+}
+.uploadWrap .fileItem {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  border: solid #ccc 1px;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+}
+.uploadWrap .fileItem img {
+  max-height: 100%;
+  max-width: 100%;
+}
+/*# sourceMappingURL=h5upload.css.map */
