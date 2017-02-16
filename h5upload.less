@@ -1,0 +1,62 @@
+.uploadWrap{
+    float: left;
+    position: relative;
+    padding-right: 100px;
+    min-height: 116px;
+    .selectBtn{
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        border: solid #ccc 1px;
+        color: #ccc;
+        line-height: 100px;
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        top: 10px;
+        right: 0px;
+        &:before{
+            content: " ";
+            display: block;
+            width: 40px;
+            height: 7px;
+            background: #ccc;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -3px 0 0 -20px;
+        }
+        &:after{
+            content: " ";
+            display: block;
+            width: 7px;
+            height: 40px;
+            background: #ccc;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -20px 0 0 -3px;
+        }
+        &:hover{
+            border-color: red;
+            &:before,
+            &:after{
+                background: red;
+            }
+        }
+    }
+    .fileItem{
+        margin-top: 10px;
+        width: 100px;
+        height: 100px;
+        border: solid #ccc 1px;
+        position: relative;
+        float: left;
+        margin-right: 10px;
+        img{
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+}
