@@ -27,8 +27,18 @@
 	            		var reader = new FileReader();
 						reader.readAsDataURL(file);
 						reader.onload = function(e){
-							var fileItem = $('<div class="fileItem"><img src="'+this.result+'" /></div>');
+							var fileItem = $('<div class="fileItem"><img src="'+this.result+'" /><div class="cancle" title="删除">X</div></div>');
 							_this.append(fileItem);
+							fileItem.data("file",file);
+							
+							fileItem.find(".cancle").click(function(){
+								//$(this).parent().remove();
+								console.log($(this).parent().data("file"));
+								var fileData = {
+								};
+								options.onCancel($(this).parent().data("file"));
+								$(this).parent().remove();
+							});
 							sendFile(file,fileItem);
 						};
             		}
