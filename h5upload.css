@@ -82,4 +82,29 @@
 .uploadWrap .fileItem:hover .cancle {
   display: block;
 }
+.uploadWrap .uploading {
+  width: 180px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: none;
+}
+.uploadWrap .uploading div {
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+.uploadWrap .uploading div p {
+  font-size: 12px;
+  line-height: 20px;
+}
 /*# sourceMappingURL=h5upload.css.map */
