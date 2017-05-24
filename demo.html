@@ -1,0 +1,28 @@
+
+
+					
+<!DOCTYPE html>
+<html ng-app="App">
+	<head>
+		<title>上传图片demo</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="h5upload.css"/>
+		<script src="query.h5upload.js"></script>
+	</head>
+	<body ng-controller="userInfo" class="bf4">
+		<div id="upload"></div>
+		<script type="text/javascript">
+			//上传
+			$("#upload").h5upload({
+				multiple:false,
+				url: wuka.baseAPI +"file/upfile",
+				success: function(data,item){
+					console.log(data);
+				},
+				onCancel: function(file){}
+			});
+		</script>
+	</body>
+
+</html>
